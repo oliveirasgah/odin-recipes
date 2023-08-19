@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+h1,
+h2 {
+    font-family: Tangerine, Copperplate, cursive;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+p,
+li,
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    font-weight: 700;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0 5px;
+    margin-bottom: 50px;
+}
+
+ul li::before {
+    content: '\2022';
+    color: orange;
+    margin-right: 5px;
+}
+
+ol {
+    counter-reset: item;
+}
+
+ol li::before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: orange;
+}
+
+li {
+    margin: 9px 1px;
+}
+
+li::before {
+    font-family: Tangerine, Copperplate, cursive;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+img {
+    height: auto;
+    width: 400px;
+}
