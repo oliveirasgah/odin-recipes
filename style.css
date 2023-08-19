@@ -39,7 +39,7 @@ ol {
 
 ul li::before {
     content: '\2022';
-    color: orange;
+    color: rgb(255, 85, 0);
     margin-right: 5px;
 }
 
@@ -50,7 +50,7 @@ ol {
 ol li::before {
     content: counter(item) ". ";
     counter-increment: item;
-    color: orange;
+    color: rgb(255, 85, 0);
 }
 
 li {
